@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>הדגמת בוט הרשמה</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700;900&family=IBM+Plex+Sans+Hebrew:wght@400;600&display=swap">
+<style>
+:root {
+  --bg: #f4f6f9; --surface: #ffffff; --ink: #142033; --muted: #56647a; --line: #dde3ec;
+  --accent: #1d5fa8; --accent-soft: #e5eef9; --band: #142033; --band-ink: #e6ecf5;
+  --display: "Frank Ruhl Libre", "David", serif;
+  --body: "IBM Plex Sans Hebrew", "Arial Hebrew", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); line-height: 1.7; }
+.wrap { max-width: 64rem; margin-inline: auto; padding-inline: max(16px, 4vw); }
+.demo-bar { background: var(--accent-soft); color: var(--accent); font-size: 0.9rem; text-align: center; padding: 0.5rem 1rem; }
+header { background: var(--band); color: var(--band-ink); padding-block: 3.5rem 3rem; }
+header h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin: 0 0 0.75rem; text-wrap: balance; }
+header p { margin: 0; max-width: 40rem; font-size: 1.15rem; opacity: 0.9; }
+main { padding-block: 3rem 6rem; display: grid; gap: 2.5rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem; display: grid; gap: 0.4rem; }
+.card h2 { font-family: var(--display); font-size: 1.35rem; margin: 0; }
+.card p { margin: 0; color: var(--muted); }
+.try { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; display: grid; gap: 0.75rem; }
+.try h2 { font-family: var(--display); margin: 0; font-size: 1.5rem; }
+.try ul { margin: 0; padding-inline-start: 1.2rem; display: grid; gap: 0.35rem; }
+footer { color: var(--muted); font-size: 0.85rem; padding-block: 1.5rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="demo-bar">דף הדגמה של Linnovate. זה אינו אתר רשמי של אוניברסיטת תל אביב.</div>
+<header>
+  <div class="wrap">
+    <h1>מתלבטים מה ללמוד?</h1>
+    <p>הבוט בפינת המסך מכיר את כל תוכניות הלימוד לתואר ראשון ושני: ספי קבלה, משך לימודים, מועדי רישום ומה לומדים בכל תוכנית.</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="cards">
+    <div class="card"><h2>239 תוכניות</h2><p>תואר ראשון, תואר שני, לימודי תעודה ורפואה.</p></div>
+    <div class="card"><h2>ספי קבלה</h2><p>לפי סמסטר ומסלול, חד־חוגי ודו־חוגי.</p></div>
+    <div class="card"><h2>מועדי רישום</h2><p>עד מתי אפשר להירשם לכל תוכנית.</p></div>
+  </div>
+  <section class="try">
+    <h2>שאלות לנסות</h2>
+    <ul>
+      <li>מה סף הקבלה למדעי המחשב חד־חוגי?</li>
+      <li>אני אוהב הייטק, איזה תארים מתאימים לי?</li>
+      <li>כמה שנים לומדים תואר ראשון במדעי המחשב?</li>
+      <li>עד מתי אפשר להירשם ללימודי נשים ומגדר?</li>
+    </ul>
+  </section>
+</main>
+<footer><div class="wrap">הדגמה פנימית · Linnovate</div></footer>
+<script src="https://webchat.linno.chat/a/embed/loader.js" data-account="demoaccAccount" data-survey="55bbf5dae70e45bea6736fb3f7f8b19e"></script>
+</body>
+</html>
